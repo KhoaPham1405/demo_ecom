@@ -1,0 +1,12 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-facial-care-page": {
+      "type": "ecom-facial-care-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-facial-care-page"
+  ]
+}

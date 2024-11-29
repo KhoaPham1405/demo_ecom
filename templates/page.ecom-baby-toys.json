@@ -1,0 +1,12 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-baby-toys-page": {
+      "type": "ecom-baby-toys-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-baby-toys-page"
+  ]
+}

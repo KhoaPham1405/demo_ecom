@@ -1,0 +1,12 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-fashion-shop-page": {
+      "type": "ecom-fashion-shop-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-fashion-shop-page"
+  ]
+}

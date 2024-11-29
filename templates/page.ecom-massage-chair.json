@@ -1,0 +1,12 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-massage-chair-page": {
+      "type": "ecom-massage-chair-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-massage-chair-page"
+  ]
+}

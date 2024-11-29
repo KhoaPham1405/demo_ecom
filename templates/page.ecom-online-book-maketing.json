@@ -1,0 +1,12 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-online-book-maketing-page": {
+      "type": "ecom-online-book-maketing-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-online-book-maketing-page"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-massage-device-page": {
+      "type": "ecom-massage-device-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-massage-device-page"
+  ]
+}

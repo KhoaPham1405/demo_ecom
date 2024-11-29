@@ -1,0 +1,12 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-wallpaper-handmade-page": {
+      "type": "ecom-wallpaper-handmade-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-wallpaper-handmade-page"
+  ]
+}

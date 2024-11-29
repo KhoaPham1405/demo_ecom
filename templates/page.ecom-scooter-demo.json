@@ -1,0 +1,12 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-scooter-demo-page": {
+      "type": "ecom-scooter-demo-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-scooter-demo-page"
+  ]
+}

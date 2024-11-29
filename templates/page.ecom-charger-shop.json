@@ -1,0 +1,12 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-charger-shop-page": {
+      "type": "ecom-charger-shop-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-charger-shop-page"
+  ]
+}

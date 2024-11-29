@@ -1,0 +1,12 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-664d54bf36323b6bc0017342-page": {
+      "type": "ecom-664d54bf36323b6bc0017342-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-664d54bf36323b6bc0017342-page"
+  ]
+}

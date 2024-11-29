@@ -1,0 +1,12 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-nitroapps-page": {
+      "type": "ecom-nitroapps-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-nitroapps-page"
+  ]
+}

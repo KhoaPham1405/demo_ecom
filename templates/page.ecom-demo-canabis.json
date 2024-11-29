@@ -1,0 +1,12 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-demo-canabis-page": {
+      "type": "ecom-demo-canabis-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-demo-canabis-page"
+  ]
+}

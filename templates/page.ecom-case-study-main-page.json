@@ -1,0 +1,12 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-case-study-main-page-page": {
+      "type": "ecom-case-study-main-page-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-case-study-main-page-page"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-fashion-landing-ver-1-page": {
+      "type": "ecom-fashion-landing-ver-1-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-fashion-landing-ver-1-page"
+  ]
+}

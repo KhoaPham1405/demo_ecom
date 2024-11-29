@@ -1,0 +1,12 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-landing-electronic-page": {
+      "type": "ecom-landing-electronic-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-landing-electronic-page"
+  ]
+}

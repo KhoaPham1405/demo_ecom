@@ -1,0 +1,12 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-women-footwear-page": {
+      "type": "ecom-women-footwear-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-women-footwear-page"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-back-to-school-page": {
+      "type": "ecom-back-to-school-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-back-to-school-page"
+  ]
+}

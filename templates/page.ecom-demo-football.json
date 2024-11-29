@@ -1,0 +1,12 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-demo-football-page": {
+      "type": "ecom-demo-football-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-demo-football-page"
+  ]
+}

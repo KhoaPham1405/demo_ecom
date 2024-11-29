@@ -1,0 +1,12 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-nutrition-page": {
+      "type": "ecom-nutrition-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-nutrition-page"
+  ]
+}

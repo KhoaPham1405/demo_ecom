@@ -1,0 +1,12 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-tennis-gear-page": {
+      "type": "ecom-tennis-gear-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-tennis-gear-page"
+  ]
+}

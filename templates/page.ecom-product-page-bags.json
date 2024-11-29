@@ -1,0 +1,12 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-product-page-bags-page": {
+      "type": "ecom-product-page-bags-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-product-page-bags-page"
+  ]
+}

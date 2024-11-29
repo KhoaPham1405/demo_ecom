@@ -1,0 +1,12 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-home-plant-page": {
+      "type": "ecom-home-plant-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-home-plant-page"
+  ]
+}

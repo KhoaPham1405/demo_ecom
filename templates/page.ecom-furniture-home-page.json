@@ -1,0 +1,12 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-furniture-home-page-page": {
+      "type": "ecom-furniture-home-page-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-furniture-home-page-page"
+  ]
+}

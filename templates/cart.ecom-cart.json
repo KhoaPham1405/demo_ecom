@@ -1,0 +1,12 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-cart-cart": {
+      "type": "ecom-cart-cart",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-cart-cart"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-demo-headwear-page": {
+      "type": "ecom-demo-headwear-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-demo-headwear-page"
+  ]
+}

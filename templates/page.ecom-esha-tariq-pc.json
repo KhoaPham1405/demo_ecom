@@ -1,0 +1,12 @@
+{
+  "layout": "theme",
+  "sections": {
+    "ecom-esha-tariq-pc-page": {
+      "type": "ecom-esha-tariq-pc-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-esha-tariq-pc-page"
+  ]
+}

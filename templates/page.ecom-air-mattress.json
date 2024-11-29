@@ -1,0 +1,12 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-air-mattress-page": {
+      "type": "ecom-air-mattress-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-air-mattress-page"
+  ]
+}

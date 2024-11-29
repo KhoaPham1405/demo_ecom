@@ -1,0 +1,12 @@
+{
+  "layout": "theme",
+  "sections": {
+    "ecom-ttt-page": {
+      "type": "ecom-ttt-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-ttt-page"
+  ]
+}

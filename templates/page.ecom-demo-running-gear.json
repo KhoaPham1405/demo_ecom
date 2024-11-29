@@ -1,0 +1,12 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-demo-running-gear-page": {
+      "type": "ecom-demo-running-gear-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-demo-running-gear-page"
+  ]
+}

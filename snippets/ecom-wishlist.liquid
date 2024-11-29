@@ -1,0 +1,101 @@
+<!-- Extension EComposer Wishlist -->
+{% liquid
+  assign SETTINGS = shop.metafields.ecomposer.wishlist.value
+  assign target = '_self'
+  if SETTINGS.link_target
+    assign target = '_blank'
+  endif
+%}
+<script>
+(function() {
+  var proxy_path = window.Shopify.routes.root + window.EComposer.proxy_path.replace('/','');
+  
+  var wishlist_button_list = document.querySelectorAll('.ecom-product__wishlist-link');
+  {% if SETTINGS.user_required == 'login' %}
+    var data = {{ customer.metafields.ecomposer.wishlist | default: "''"}};
+    wishlist_button_list.forEach(function(wishlist_button) {
+        // 
+        let product_id = wishlist_button.getAttribute("data-product-id");
+        if(data.includes('gid://shopify/Product/' + product_id)) {
+          wishlist_button.classList.add('ecom-product__wishlist-link-added','ecom-button-active');
+          wishlist_button.setAttribute('href', proxy_path + '/wishlist');
+          wishlist_button.setAttribute('target', '{{ target }}');
+        } 
+        wishlist_button.addEventListener('click', function(){
+          {% if customer %}
+            if(this.classList.contains('ecom-product__wishlist-link-added')) {
+              this.setAttribute('href',  proxy_path + '/wishlist');
+              this.setAttribute('target', '{{ target }}');
+            } else {
+              this.classList.add('ecom-ext-wishlist-icon-loading');
+              let product_id = this.getAttribute("data-product-id"); 
+
+              let data = {
+                'id': product_id
+              }
+              let request = fetch(proxy_path + "/wishlist", {
+                    method: "POST",
+                    headers: {
+                      "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(data),
+                  });
+              request
+                  .then(response => {
+                    // Check if the response is successful (status code 2xx)
+                    if (response.ok) {
+                      this.classList.add('ecom-product__wishlist-link-added', 'ecom-button-active');
+                      this.classList.remove('ecom-ext-wishlist-icon-loading');
+                      {% if shop.metafields.ecomposer.mobile_navigation.value.enable %}
+                        var countNode = document.querySelector('.ecom-toolbar_mobile-wishlist-count');
+                        if(countNode) {
+                            var count = parseInt(countNode.innerHTML);
+                            count++;
+                            countNode.innerHTML = count;
+                        }
+                      {% endif %}
+                    } else {
+                      console.log('Loi')
+                    }
+                  })
+            }
+          {% else %}
+            this.setAttribute('href',  "{{ routes.account_login_url }}");
+            this.setAttribute('target', '{{ target }}');
+          {% endif %}
+        })
+    })
+  {% else %}
+    var data = JSON.parse(localStorage.getItem("wishlist"));
+    if(data == null)
+      data = [];
+    wishlist_button_list.forEach(function(wishlist_button) {
+        let product_handle = wishlist_button.getAttribute("data-product-handle");
+        if(data.includes(product_handle)) {
+          wishlist_button.classList.add('ecom-product__wishlist-link-added','ecom-button-active');
+          wishlist_button.setAttribute('href', proxy_path + '/wishlist');
+          wishlist_button.setAttribute('target', '{{ target }}');
+        }
+        wishlist_button.addEventListener('click', function(){
+          if(this.classList.contains('ecom-product__wishlist-link-added')) {
+            this.setAttribute('href', proxy_path + '/wishlist');
+            this.setAttribute('target', '{{ target }}');
+          }
+          this.classList.add('ecom-product__wishlist-link-added','ecom-button-active');
+          let product_handle = this.getAttribute("data-product-handle");
+          data = JSON.parse(localStorage.getItem("wishlist"));
+          if(data == null) {
+            data = [];           
+          }
+          if(!data.includes(product_handle)) {
+            data.push(product_handle);
+            const setjson = JSON.stringify(data);
+            localStorage.setItem("wishlist", setjson);
+            this.classList.add('ecom-product__wishlist-link-added','ecom-button-active');
+          }
+        })
+    })
+  {% endif %}
+})()
+</script>
+<!-- End Extension Ecomposer Wishlist -->
